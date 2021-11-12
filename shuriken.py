@@ -30,12 +30,3 @@ class Shuriken(Sprite):
     def update(self, stats, sb):
         """Move the shuriken left."""
         self.rect.move_ip(-self.speed, 0)
-        # if self.rect.right < 0:
-        #     stats.s_amount += 1
-        #     print(stats.s_amount)
-        #     if stats.s_amount > 0 and stats.s_amount % 15 == 0:
-        #         stats.level += 1
-        #         self.ai_settings.increase_speed()
-        #     stats.score += self.ai_settings.shuriken_points
-        #     sb.prep_score()
-        #     self.kill()

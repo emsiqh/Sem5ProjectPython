@@ -133,7 +133,6 @@ def update_shurikens(ai_settings, stats, sb, screen, ninja, shurikens):
     for shuriken in shurikens:
         if shuriken.rect.right < 0:
             stats.s_amount += 1
-            print(stats.s_amount)
             level_up(ai_settings, stats, sb)
             stats.score += ai_settings.shuriken_points
             sb.prep_score()
